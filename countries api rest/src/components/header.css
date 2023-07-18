@@ -1,0 +1,31 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 15px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.header.light {
+    background-color: white !important;
+}
+
+.header.dark {
+    background-color: hsl(209, 23%, 22%) !important;
+}
+
+.btn img {
+    background-color: black;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+@media (min-width: 800px) {
+    .header {
+        padding: 20px 5vw;
+    }
+}

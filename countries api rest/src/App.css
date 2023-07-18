@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+    text-decoration: none;
+}
+
+
+img {
+    width: 100%;
+    height: 30vh;
+    border-radius: 5px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    gap: 60px;
+}
+
+.country {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.country-name {
+    padding-bottom: 10px;
+}
+
+.data {
+    border-radius: 5px;
+    gap: 10px;
+    padding: 10px 0 20px 10px;
+}
+
+.country.light {
+    background-color: white !important;
+}
+
+.country.dark {
+    background-color: hsl(209, 23%, 22%) !important;
+}
+
+.app.light {
+    background-color: hsl(0, 0%, 97%);
+}
+
+.app.dark {
+    background-color: hsl(207, 26%, 17%);
+}
+
+.dark {
+    color: white;
+}
+
+.light {
+    color: black;
+}
+
+.theme-div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+input {
+    width: 90vw;
+    padding: 15px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 0 5vw 20px;
+}
+
+.input.light {
+    background-color: white;
+}
+
+.input.dark {
+    background-color: hsl(209, 23%, 22%);
+}
+
+select {
+    width: 40vw;
+    padding: 15px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 0 5vw 20px;
+}
+
+.select.light {
+    background-color: white;
+}
+
+.select.dark {
+    background-color: hsl(209, 23%, 22%);
+}
+
+@media (min-width: 800px) {
+
+    input {
+        margin: 0;
+        width: 30vw;
+    }
+
+    select {
+        margin: 0;
+        width: 20vw;
+    }
+
+    .filter-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 5vw;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding: 0 5vw;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .flag-list {
+        height: 20vh;
+    }
+
+}
