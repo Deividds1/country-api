@@ -47,6 +47,10 @@ img {
     background-color: hsl(209, 23%, 22%) !important;
 }
 
+.app {
+    height: 100vh;
+}
+
 .app.light {
     background-color: hsl(0, 0%, 97%);
 }
